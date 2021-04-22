@@ -80,6 +80,7 @@ form button {
   top: 8px;
   left: 48%;
   padding: 0;
+  font-size: 0.9rem;
 }
 
 .card {
@@ -212,6 +213,19 @@ h3 {
 
 .header .menu-item {
   margin: 0 16px;
+}
+
+.header .menu-item a {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, currentColor)) var(--p, 0) 100%/var(--d, 0) 2px no-repeat;
+  background: linear-gradient(currentColor 0 0) var(--p, 0) 100%/var(--d, 0) 2px no-repeat;
+  -webkit-transition: 0.3s, background-position 0s 0.3s;
+  transition: 0.3s, background-position 0s 0.3s;
+  font-size: 1.2rem;
+}
+
+.header .menu-item a:hover {
+  --d: 100%;
+  --p: 100%;
 }
 
 .header .menu-item:last-child {
@@ -870,7 +884,9 @@ footer .footer__container .footer__download-link a {
   }
   .header .menu-item {
     margin-bottom: 20px;
-    font-size: 24px;
+  }
+  .header .menu-item a {
+    font-size: 1.5rem;
   }
   .support {
     padding-top: 50px;
