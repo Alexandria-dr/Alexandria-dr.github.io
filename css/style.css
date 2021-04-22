@@ -817,6 +817,9 @@ footer .footer__container .footer__download-link a {
     height: 50px;
     width: 100%;
   }
+  .header .header__container {
+    padding: 0 5%;
+  }
   .header .header__burger {
     display: block;
     position: relative;
