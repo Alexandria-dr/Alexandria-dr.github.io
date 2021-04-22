@@ -7,7 +7,7 @@
 $font-black: #1e1928;
 $Roboto: "Roboto", sans-serif;
 $Inter: "Inter", sans-serif;
-$header-color: #a59887;
+$header-color: #c78a8a;
 $purple-bg: #592141;
 
 @mixin grid-center() {
@@ -155,7 +155,6 @@ h3 {
     // background-color: #81715b;
     // background-color: #834d5d;
     background-color: $header-color;
-    opacity: 0.95;
     z-index: 2;
   }
 
