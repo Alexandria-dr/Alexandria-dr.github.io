@@ -296,6 +296,15 @@ h3 {
       font-family: $Roboto;
       margin-top: 15px;
     }
+    .explain__img {
+      grid-area: img;
+      position: relative;
+      img {
+        position: absolute;
+        top: -20px;
+        left: -30%;
+      }
+    }
   }
   .explain__list {
     grid-area: listt;
@@ -322,15 +331,6 @@ h3 {
       font-weight: 700;
       display: block;
       margin-bottom: 10px;
-    }
-  }
-  .explain__img {
-    grid-area: img;
-    position: relative;
-    img {
-      position: absolute;
-      top: -20px;
-      left: -30%;
     }
   }
 }
