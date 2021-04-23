@@ -328,6 +328,9 @@ h3 {
 }
 
 .explain {
+  background-image: url(/img/paper.webp);
+  background-repeat: no-repeat;
+  background-position: bottom -260px left 10%;
   background-color: #ffd394;
   width: 100%;
   overflow: hidden;
@@ -337,7 +340,7 @@ h3 {
   padding: 80px 5% 10px;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "h2 listt" "img listt";
+      grid-template-areas: "h2 listt" ". listt";
 }
 
 .explain .explain__container > * {
@@ -393,19 +396,6 @@ h3 {
 .explain #learn {
   height: 70px;
   width: 100%;
-  position: relative;
-}
-
-.explain #learn::before {
-  content: "";
-  position: absolute;
-  z-index: 11;
-  width: 500px;
-  height: 300px;
-  bottom: -50px;
-  left: 0;
-  background-image: url(/img/paper.webp);
-  background-repeat: no-repeat;
 }
 
 .features__container {
@@ -943,8 +933,6 @@ footer .footer__container .footer__download-link a {
     width: 80%;
   }
   .explain {
-    background-image: url(/img/paper.webp);
-    background-repeat: no-repeat;
     background-position: bottom -260px left 0;
   }
   .explain #learn {
