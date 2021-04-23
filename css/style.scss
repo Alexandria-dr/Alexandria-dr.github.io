@@ -775,6 +775,9 @@ footer {
   }
 
   .explain {
+    background-image: url(/img/paper.webp);
+    background-repeat: no-repeat;
+    background-position: bottom -260px left 0;
     #learn {
       height: 49px;
       width: 100%;
@@ -792,6 +795,7 @@ footer {
       .explain__list {
         grid-area: listt;
         padding: 30px 0 0;
+        margin-bottom: 40px;
       }
       .explain__img {
         grid-area: img;

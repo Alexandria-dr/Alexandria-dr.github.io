@@ -942,6 +942,11 @@ footer .footer__container .footer__download-link a {
   .support__image img {
     width: 80%;
   }
+  .explain {
+    background-image: url(/img/paper.webp);
+    background-repeat: no-repeat;
+    background-position: bottom -260px left 0;
+  }
   .explain #learn {
     height: 49px;
     width: 100%;
@@ -961,6 +966,7 @@ footer .footer__container .footer__download-link a {
     -ms-grid-column: 1;
     grid-area: listt;
     padding: 30px 0 0;
+    margin-bottom: 40px;
   }
   .explain .explain__container .explain__img {
     -ms-grid-row: 3;
