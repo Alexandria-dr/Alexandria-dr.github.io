@@ -943,11 +943,6 @@ footer .footer__container .footer__download-link a {
     grid-area: img;
     height: 60px;
   }
-  .explain .explain__container .explain__img img {
-    position: absolute;
-    top: -30px;
-    left: -10%;
-  }
   .features__container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
