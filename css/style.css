@@ -360,9 +360,6 @@ h3 {
 }
 
 .explain .explain__container .explain__img img {
-  position: absolute;
-  top: -20px;
-  left: -30%;
   z-index: 10;
 }
 
