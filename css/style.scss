@@ -283,7 +283,7 @@ h3 {
   width: 100%;
   overflow: hidden;
   .explain__container {
-    padding: 80px 5%;
+    padding: 80px 5% 10px;
     display: grid;
     grid-template-areas:
       "h2 listt"
@@ -298,6 +298,7 @@ h3 {
       margin-top: 15px;
     }
     .explain__img {
+      height: 40px;
       grid-area: img;
       position: relative;
       bottom: -70%;
@@ -332,6 +333,11 @@ h3 {
       display: block;
       margin-bottom: 10px;
     }
+  }
+  #learn {
+    height: 70px;
+    width: 100%;
+    opacity: 0;
   }
 }
 
@@ -417,7 +423,7 @@ h3 {
   line-height: 36px;
   font-size: 1.9rem;
   .review__container {
-    padding: 10% 15%;
+    padding: 70px 15% 0 15%;
     span {
       font-family: $Inter;
       display: block;
@@ -428,6 +434,9 @@ h3 {
         margin-top: 40px;
       }
     }
+  }
+  #partner {
+    height: 70px;
   }
 }
 
@@ -753,6 +762,11 @@ footer {
   }
 
   .explain {
+    #learn {
+      height: 49px;
+      width: 100%;
+      opacity: 0;
+    }
     .explain__container {
       grid-template-areas:
         "h2 "
@@ -831,7 +845,15 @@ footer {
     }
   }
   .review {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
+    padding-top: 50px;
+    .review__container {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    #partner {
+      height: 50px;
+    }
   }
   .start {
     .start__container {
@@ -854,16 +876,23 @@ footer {
         grid-area: social;
         justify-self: center;
         margin-bottom: 30px;
-        width: 100%;
       }
       .lists {
         grid-area: lists;
         display: flex;
         flex-wrap: wrap;
-        justify-content: start;
-      }
-      p {
-        width: 100%;
+        justify-content: space-around;
+        .footer_item {
+          display: flex;
+          justify-content: center;
+          &:first-child {
+            margin-right: 0;
+          }
+          a,
+          span {
+            margin: 0;
+          }
+        }
       }
       .footer-p {
         grid-area: p;
@@ -875,7 +904,7 @@ footer {
   }
 }
 
-@media (max-width: 290px) {
+@media (max-width: 300px) {
   .library__container {
     .library__items {
       display: flex;
