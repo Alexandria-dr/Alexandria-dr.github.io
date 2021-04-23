@@ -90,6 +90,7 @@ form {
 }
 
 .card {
+  padding: 5% 0;
   background-color: white;
   position: relative;
   z-index: 3;
@@ -405,7 +406,6 @@ h3 {
 .security {
   overflow: hidden;
   .security__card {
-    padding: 5% 0;
     p {
       font-size: 1.1rem;
     }
@@ -469,8 +469,6 @@ h3 {
 .price {
   overflow: hidden;
   .price__card {
-    padding: 5% 0;
-
     &::before {
       background-color: $font-black;
     }
@@ -657,6 +655,10 @@ footer {
     }
   }
 
+  .card {
+    padding: 50px 0;
+  }
+
   .header {
     height: 50px;
     width: 100%;
@@ -749,7 +751,6 @@ footer {
 
   .support__card {
     grid-area: card;
-    padding: 20px 0;
   }
 
   .support__image {
