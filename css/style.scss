@@ -300,10 +300,8 @@ h3 {
     .explain__img {
       grid-area: img;
       position: relative;
+      bottom: -70%;
       img {
-        // position: absolute;
-        // top: -20px;
-        // left: -30%;
         z-index: 10;
       }
     }
@@ -449,6 +447,9 @@ h3 {
       transition: all ease-in-out 0.5s;
       border-radius: 10px;
       @include grid-center();
+      img {
+        width: 100%;
+      }
       &:hover {
         background-color: #8f8f8faf;
         cursor: pointer;
@@ -771,9 +772,7 @@ footer {
         max-width: 90vw;
         position: relative;
         left: -20%;
-        img {
-          position: absolute;
-        }
+        bottom: 10%;
       }
     }
   }
@@ -843,6 +842,7 @@ footer {
       }
     }
   }
+
   footer {
     .footer__container {
       grid-template-areas:
@@ -854,6 +854,7 @@ footer {
         grid-area: social;
         justify-self: center;
         margin-bottom: 30px;
+        width: 100%;
       }
       .lists {
         grid-area: lists;
@@ -861,11 +862,35 @@ footer {
         flex-wrap: wrap;
         justify-content: start;
       }
+      p {
+        width: 100%;
+      }
       .footer-p {
         grid-area: p;
       }
       .footer__download-link {
         grid-area: download;
+      }
+    }
+  }
+}
+
+@media (max-width: 290px) {
+  .library__container {
+    .library__items {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      // flex-basis: 250px;
+      .library__item {
+        width: 100%;
+        max-width: 200px;
+        min-width: 130px;
+        &:last-child {
+          width: 100%;
+          max-width: 200px;
+          min-width: 130px;
+        }
       }
     }
   }
