@@ -353,19 +353,6 @@ h3 {
   margin-top: 15px;
 }
 
-.explain .explain__container .explain__img {
-  height: 40px;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: img;
-  position: relative;
-  bottom: -70%;
-}
-
-.explain .explain__container .explain__img img {
-  z-index: 10;
-}
-
 .explain .explain__list {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -406,7 +393,19 @@ h3 {
 .explain #learn {
   height: 70px;
   width: 100%;
-  opacity: 0;
+  position: relative;
+}
+
+.explain #learn::before {
+  content: "";
+  position: absolute;
+  z-index: 11;
+  width: 500px;
+  height: 300px;
+  bottom: -50px;
+  left: 0;
+  background-image: url(/img/paper.webp);
+  background-repeat: no-repeat;
 }
 
 .features__container {

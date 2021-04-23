@@ -298,15 +298,15 @@ h3 {
       font-family: $Roboto;
       margin-top: 15px;
     }
-    .explain__img {
-      height: 40px;
-      grid-area: img;
-      position: relative;
-      bottom: -70%;
-      img {
-        z-index: 10;
-      }
-    }
+    // .explain__img {
+    //   height: 40px;
+    //   grid-area: img;
+    //   position: relative;
+    //   bottom: -70%;
+    //   img {
+    //     z-index: 10;
+    //   }
+    // }
   }
   .explain__list {
     grid-area: listt;
@@ -338,7 +338,19 @@ h3 {
   #learn {
     height: 70px;
     width: 100%;
-    opacity: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 11;
+      width: 500px;
+      height: 300px;
+      bottom: -50px;
+      left: 0;
+      background-image: url(/img/paper.webp);
+      background-repeat: no-repeat;
+    }
   }
 }
 
