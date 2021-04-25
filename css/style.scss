@@ -26,6 +26,7 @@ body {
 section,
 footer {
   padding: 0 calc(50% - 640px);
+  overflow: hidden;
 }
 
 p {
