@@ -17,7 +17,7 @@ gsap.to('.img-moon',{
         start:'top-=100 top+=100',
         end:'bottom+=500 top',
         scrub: true,
-        markers: true,
+        // markers: true,
     }
 })
 
