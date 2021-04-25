@@ -2,6 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const navButton = document.querySelector('.header__burger');
 
+const listFromLeft = document.querySelectorAll('.gsap-list-from-left');
 const fromLeft = document.querySelectorAll('.gsap-from-left');
 const fromRight = document.querySelectorAll('.gsap-from-right')
 
@@ -21,7 +22,7 @@ gsap.to('.img-moon',{
     }
 })
 
-fromLeft.forEach(element => {
+listFromLeft.forEach(element => {
     gsap.fromTo(element,{
         x: -200,
         opacity: 0},{
@@ -37,6 +38,22 @@ fromLeft.forEach(element => {
         }
     )
 })
+fromLeft.forEach(element => {
+    gsap.fromTo(element,{
+        x: -200,
+        opacity: 0},{
+        x: 0,
+        opacity: 1,
+        scrollTrigger:{
+            trigger:element,
+            start: 'top-=300 center',
+            end: 'center-=100 center',
+            scrub: true,
+            // markers: true,
+        }
+        }
+    )
+})
 
 fromRight.forEach(element => {
     gsap.fromTo(element,{
@@ -46,8 +63,8 @@ fromRight.forEach(element => {
         opacity: 1,
         scrollTrigger:{
             trigger:element,
-            start: 'top-=400 center',
-            end: 'top-=200 center-=50',
+            start: 'top-=300 center',
+            end: 'center-=100 center',
             scrub: true,
             // markers: true,
         }
