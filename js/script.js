@@ -5,6 +5,7 @@ const navButton = document.querySelector('.header__burger');
 const fromLeft = document.querySelectorAll('.gsap-from-left');
 const fromRight = document.querySelectorAll('.gsap-from-right')
 
+function init() {
 navButton.addEventListener('click', e => {navButton.classList.toggle('active');
 document.querySelector('.header__menu').classList.toggle('active');
 document.querySelector('body').classList.toggle('lock')})
@@ -53,3 +54,8 @@ fromRight.forEach(element => {
         }
     )
 })
+}
+
+window.addEventListener('load', function () {
+    init();
+});
