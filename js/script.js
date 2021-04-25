@@ -23,50 +23,41 @@ gsap.to('.img-moon',{
 })
 
 listFromLeft.forEach(element => {
-    gsap.fromTo(element,{
+    gsap.from(element,{
         x: -200,
-        opacity: 0},{
-        x: 0,
-        opacity: 1,
+        opacity: 0,
         scrollTrigger:{
             trigger:element,
             start: 'top-=400 center',
             end: 'top-=200 center-=50',
             scrub: true,
-            // markers: true,
         }
         }
     )
 })
 fromLeft.forEach(element => {
-    gsap.fromTo(element,{
+    gsap.from(element,{
         x: -200,
-        opacity: 0},{
-        x: 0,
-        opacity: 1,
+        opacity: 0,
         scrollTrigger:{
             trigger:element,
             start: 'top-=300 center',
             end: 'center-=100 center',
             scrub: true,
-            // markers: true,
         }
         }
     )
 })
 
 fromRight.forEach(element => {
-    gsap.fromTo(element,{
+    gsap.from(element,{
         x: +200,
-        opacity: 0},{
-        x: 0,
-        opacity: 1,
+        opacity: 0,
         scrollTrigger:{
             trigger:element,
             start: 'top-=300 center',
             end: 'center-=100 center',
             scrub: true,
-            // markers: true,
         }
         }
     )
