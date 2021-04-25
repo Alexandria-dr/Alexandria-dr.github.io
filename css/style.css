@@ -785,6 +785,8 @@ footer .footer__container .social button {
 
 footer .footer__container .social button:hover {
   background-color: #511569;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 footer .footer__container .social button:last-child {

@@ -609,6 +609,7 @@ footer {
         transition: all ease-in 0.4s;
         &:hover {
           background-color: #511569;
+          box-shadow: none;
         }
         &:last-child {
           margin-right: 0;
