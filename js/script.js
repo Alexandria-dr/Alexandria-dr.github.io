@@ -16,7 +16,6 @@ for_.forEach(element => {
             start: `top${start} center`,
             end: `top${end1} center${end2}`,
             scrub: true,
-            markers: true
         }
     }
     )
