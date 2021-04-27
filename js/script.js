@@ -6,7 +6,7 @@ const listFromLeft = document.querySelectorAll('.gsap-list-from-left');
 const fromLeft = document.querySelectorAll('.gsap-from-left');
 const fromRight = document.querySelectorAll('.gsap-from-right')
 
-function fromSide(for_, x, start, end1, end2, moon ) {
+function animation(for_, x, start, end1, end2, moon ) {
     gsap.to('.img-moon', {
         y: 500,
         scrollTrigger: {
@@ -44,7 +44,7 @@ function initDisplay() {
                 vvar.push(param[i][ii])
             }
         vvar[5] = 100;
-        fromSide.apply(this, vvar);
+        animation.apply(this, vvar);
   }
 }
 
@@ -67,7 +67,7 @@ function initScreen() {
              }
          vvar[1]= 0;
          vvar[5] = 200;
-         fromSide.apply(this, vvar);
+         animation.apply(this, vvar);
    }
 }
 
