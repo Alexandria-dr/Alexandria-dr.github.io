@@ -4,6 +4,19 @@
           box-sizing: border-box;
 }
 
+.moon-family {
+  position: relative;
+  display: inline-block;
+}
+
+.img-moon {
+  max-height: 64px;
+  max-width: 64px;
+  position: absolute;
+  right: 25px;
+  top: -50px;
+}
+
 body {
   background: #ede6dd;
   font-size: 16px;
@@ -352,7 +365,7 @@ h3 {
 }
 
 .explain {
-  background-image: url(/img/paper.webp);
+  background-image: url(/img/paper.svg);
   background-repeat: no-repeat;
   background-position: bottom -260px left 10%;
   background-color: #ffd394;
@@ -395,15 +408,15 @@ h3 {
 }
 
 .explain .explain__list .list-item:first-child {
-  background: top left url(/img/List1.png) no-repeat;
+  background: top left url(/img/list1.svg) no-repeat;
 }
 
 .explain .explain__list .list-item:nth-child(2) {
-  background: top left url(/img/List2.png) no-repeat;
+  background: top left url(/img/list2.svg) no-repeat;
 }
 
 .explain .explain__list .list-item:last-child {
-  background: top left url(/img/List3.png) no-repeat;
+  background: top left url(/img/list3.svg) no-repeat;
 }
 
 .explain .explain__list .list-item p {
@@ -1134,9 +1147,17 @@ footer .footer__container .footer__download-link a {
     -ms-grid-column: 1;
     grid-area: download;
   }
+  .moon-family {
+    padding-left: 25px;
+  }
 }
 
 @media (max-width: 300px) {
+  .img-moon {
+    max-height: 40px;
+    max-width: 40px;
+    right: 25px;
+  }
   .library__container .library__items {
     display: -webkit-box;
     display: -ms-flexbox;
