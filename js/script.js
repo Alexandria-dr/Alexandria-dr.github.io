@@ -30,7 +30,6 @@ function moon(start) {
             start: `top-=110 top+=${start}`,
             end: 'bottom+=1500 top',
             scrub: true,
-            markers: true
         }
     })
     
