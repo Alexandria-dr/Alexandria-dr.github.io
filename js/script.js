@@ -44,7 +44,6 @@ function initDisplay() {
                 vvar.push(param[i][ii])
             }
         vvar[5] = 100;
-        console.log(vvar);
         fromSide.apply(this, vvar);
   }
 }
